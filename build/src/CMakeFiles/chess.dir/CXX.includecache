@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/nicholas/Desktop/chess_ai/include/chess_game/chess.hpp
+iostream
+-
+vector
+-
+bitset
+-
+stdint.h
+-
+string
+-
+math.h
+-
+stdio.h
+-
+stack
+-
+unordered_map
+-
+
+/home/nicholas/Desktop/chess_ai/src/main.cpp
+../include/chess_game/chess.hpp
+/home/nicholas/Desktop/chess_ai/include/chess_game/chess.hpp
+
