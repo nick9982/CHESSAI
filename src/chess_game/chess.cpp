@@ -3377,7 +3377,8 @@ bool Chess::step(uint64_t from, uint64_t to)
             }
             if(this->wturn)
             {
-                this->legal_moves_white.erase(this->legal_moves_white.begin() + a_idx);
+                //changed this line might cause problems
+                this->legal_moves_white.erase(this->legal_moves_white.begin() + a_idx-1);
                 for(uint i = 0 ; i < 6; i++)
                 {
                     if((from & this->bitboard[i]) != 0)
